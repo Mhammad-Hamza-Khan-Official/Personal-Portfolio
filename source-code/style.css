@@ -8,7 +8,7 @@
 :root {
     --text-color: white;
     --accent-color: #ff004f;
-    --hover-color: #1e1e1e;
+    --hover-color: #ff004f;
     --light-text-color: #ffffffd6;
 }
 
@@ -53,6 +53,7 @@ nav>h1>p {
     overflow: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    background-color: black;
 }
 
 nav {
@@ -63,11 +64,17 @@ nav {
     padding-top: 1vw;
 }
 
-.Home-section {
-    width: 50%;
+/* ----Homesection--------- */
+
+.Home {
+    height: 85vh;
+    width: 83vw;
 }
 
-/* ----Homesection--------- */
+.Home-section {
+    width: 70%;
+}
+
 
 .Home-section>h3 {
     font-size: 1.6em;
@@ -84,32 +91,54 @@ nav {
     font-weight: bolder;
 }
 
-.Home {
-    height: 80vh;
-    width: 100%;
-}
 
 /* ---------------About */
 
 .About {
     height: 100vh;
-    width: 100%;
-}
-
-.About-section>h1 {
-    font-size: 3.6em;
-    font-weight: bolder;
-    margin-bottom: 1vw;
+    width: 83vw;
+    background-color: black;
 }
 
 .About img {
-    width: 30%;
+    width: 100%;
+
 }
 
-.about-text {
-    width: 60%;
-    margin-left: 5vw;
-    font-weight: 200;
+.About-section h1 {
+    font-size: 3em;
+    color: var(--accent-color);
+    margin-bottom: 1vw;
+}
+
+.about-text{
+    padding-left: 3em;
+}
+
+.about-text-inner p{
+    font-weight: lighter;
     color: var(--light-text-color);
     line-height: 1.8em;
+}
+
+.about-text-inner {
+    gap: 0.5em;
+}
+
+.list-contain ul {
+    margin: 1em;
+    gap: 2.5em;
+}
+
+.list-contain :first-child > li {
+    color: white;
+    font-weight: bold;
+}
+
+.list-contain :last-child > li{
+    color: var(--light-text-color);
+}
+
+.list-contain :first-child :hover {
+        text-decoration: underline var(--accent-color) 3px;
 }
