@@ -30,6 +30,10 @@
       justify-content: center;
 }
 
+.align-self-atart{
+      align-self: flex-start;
+}
+
 
 .p-R-L{
       padding-left: 8vw;
