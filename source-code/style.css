@@ -78,7 +78,7 @@ nav {
 
 
 .Home-section>h3 {
-    font-size: 1.6em;
+    font-size: 1.6rem;
     font-weight: 100;
 }
 
@@ -88,7 +88,7 @@ nav {
 }
 
 .Home-section>h1 {
-    font-size: 3.6em;
+    font-size: 3.6rem;
     font-weight: bolder;
 }
 
@@ -107,7 +107,7 @@ nav {
 }
 
 .About-section h1 {
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 .about-text{
@@ -171,10 +171,9 @@ nav {
 /* ------------------------services------------------------- */ 
 
 .Services {
-    height: 100vh;
+    height: 95vh;
     width: 83vw;
     background-color: black;
-    border: 3px solid white;
 
 }
 
@@ -182,23 +181,30 @@ nav {
     gap: 3em;
 }
 
-.service-card{
-    gap: 0.7em;
-    height: 97%;
-    padding: 0.3em;
-    background-color: var(--cart-color);
-}
+
 
 .service-img{
     width: 100%;
 }
 
 .service-card-contain{
-    height: 46vh;
+    height: 22rem;
     padding: 1em 2em;
     border-radius: 1em;
     background-color: var(--cart-color);
+    justify-content: center;
+    gap: 1em;
+    transition: transform 0.6s , background-color 0.7s;
+
 }
+
+.service-card-contain:hover{
+    background-color: var(--accent-color);
+    transform: translateY(-20px);
+}
+
+
+
 
 .services-contain p {
         font-size: smaller;
@@ -208,15 +214,42 @@ nav {
 }
 
 .services-contain a {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-weight: lighter;
 }
 
 .services-contain h3{
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 .service-img > img{
     height: 75px;
     width: 75px;
 }
+
+.Services > h1 {
+    font-size: 4rem;
+    align-self: flex-start;
+}
+
+.Services {
+    gap: 4.5em;
+}
+
+/* ----------------------------My Work-------------------------  */
+
+.My-work {
+    height: 100vh;
+    width: 83vw;
+    background-color: black;
+}
+
+.work-container{
+    gap: 3em;
+    
+}
+
+
+
+
+
