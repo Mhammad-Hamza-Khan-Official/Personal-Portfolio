@@ -2,19 +2,37 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: var(--text-color);
 }
 
 :root {
     --text-color: white;
     --accent-color: #ff004f;
     --hover-color: #ff004f;
-    --light-text-color: #ffffffd6;
+    --hover-text-color:black;
+    --hover-link-color:#ff004f;
+    --sub-text-color: #ffffffd6;
     --cart-color:#262626;
+    --bg-color:black;
+    --border-color:white; 
 }
 
+/* :root {
+    --text-color: #ffffff;
+    --accent-color: #a855f7;
+    --hover-text-color:black;
+    --hover-color: #c084fc;
+    --sub-text-color: #f3dfff;
+    --cart-color:#2a1240;
+    --bg-color:#1a0b26;
+    --border-color:#a855f7;
+} */
+
+
+
+
 a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
 
 }
@@ -26,7 +44,7 @@ header ul {
 }
 
 header ul li a:hover {
-    color: var(--accent-color);
+    color: var(--hover-link-color);
 }
 
 header ul li a {
@@ -54,7 +72,7 @@ nav>h1>p {
     overflow: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    background-color: black;
+    background-color: var(--bg-color);
 }
 
 nav {
@@ -98,7 +116,7 @@ nav {
 .About {
     height: 100vh;
     width: 83vw;
-    background-color: black;
+    background-color: var(--bg-color);
 }
 
 .About img {
@@ -116,7 +134,7 @@ nav {
 
 .about-text-inner p{
     font-weight: lighter;
-    color: var(--light-text-color);
+    color: var(--sub-text-color);
     line-height: 1.8em;
 }
 
@@ -136,12 +154,12 @@ nav {
 }
 
 .list-contain :first-child > li {
-    color: white;
+    color: var(--text-color);
     font-weight: bold;
 }
 
 .list-contain :last-child > li{
-    color: var(--light-text-color);
+    color: var(--sub-text-color);
     margin-left: 2em;
     gap: 0.2em;
 }
@@ -151,11 +169,11 @@ nav {
 }
 
 .list-contain :first-child :hover {
-        border-bottom: 3px solid var(--accent-color);
+        border-bottom: 3px solid var(--hover-color);
 }
 
 .list-contain dt{
-    color: var(--light-text-color);
+    color: var(--sub-text-color);
     font-weight:lighter;
 }
 
@@ -173,7 +191,7 @@ nav {
 .Services {
     height: 95vh;
     width: 83vw;
-    background-color: black;
+    background-color: var(--bg-color);
 
 }
 
@@ -199,7 +217,8 @@ nav {
 }
 
 .service-card-contain:hover{
-    background-color: var(--accent-color);
+    background-color: var(--hover-color);
+    color: var(--hover-text-color);
     transform: translateY(-20px);
 }
 
@@ -208,14 +227,12 @@ nav {
 
 .services-contain p {
         font-size: smaller;
-    color: var(--light-text-color);
-    font-weight: lighter;
+    color: var(--sub-text-color);
     line-height: 1.5em;
 }
 
 .services-contain a {
     font-size: 0.9rem;
-    font-weight: lighter;
 }
 
 .services-contain h3{
@@ -238,18 +255,83 @@ nav {
 
 /* ----------------------------My Work-------------------------  */
 
-.My-work {
+.My-work-section {
     height: 100vh;
     width: 83vw;
-    background-color: black;
-}
-
-.work-container{
+    background-color: var(--bg-color);
     gap: 3em;
-    
 }
 
+.My-work-section a > img {
+    width: 20px;
+    height: 20px;
+}
 
+.My-work-section h1 {
+    font-size: 2.7em;
+    margin-left: 2em;
+}
 
+.layer a {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+}
+
+.work-card > img {
+    width:100%;
+    height: 100%;
+    border-radius: 1em;
+    transition: transform 0.5s;
+    display: block;
+    position: relative;
+}
+
+/* img container is .work card */
+
+.work-card {
+    width: 348px;
+    height: 462px;
+    position: relative;
+    border-radius: 1em;
+}
+
+.work-card p {
+    font-size: small;
+    width: 80%;
+    color: var(--sub-text-color);
+}
+
+.layer {
+    position: absolute;
+    bottom: 0px;
+    overflow: hidden;
+    height: 0%;
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 1em;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+}
+
+.work-card:hover .layer{
+    background: linear-gradient(rgba(0,0,0,0.6),var(--hover-color)
+    );
+    color: var(--hover-text-color);
+    height: 100%;
+}
+
+.work-container {
+    gap: 1.6em;
+}
+
+.My-work-section .btn {
+    width: 9em;
+    background-color: var(--bg-color);
+    height: 2.7em;
+    border: 0.1em solid var(--border-color);
+}
 
 
