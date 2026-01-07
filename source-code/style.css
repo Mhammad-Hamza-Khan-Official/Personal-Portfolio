@@ -3,6 +3,11 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     color: var(--text-color);
+
+}
+
+p{
+    text-align: justify;
 }
 
 :root {
@@ -189,14 +194,17 @@ nav {
 /* ------------------------services------------------------- */ 
 
 .Services {
-    height: 95vh;
+    gap: 4.5em;
+    height: 100%;
     width: 83vw;
     background-color: var(--bg-color);
+    padding: 30px 0;
 
 }
 
 .services-contain{
     gap: 3em;
+    flex-wrap: wrap;
 }
 
 
@@ -207,12 +215,13 @@ nav {
 
 .service-card-contain{
     height: 22rem;
+    width: 20em;
     padding: 1em 2em;
     border-radius: 1em;
     background-color: var(--cart-color);
     justify-content: center;
     gap: 1em;
-    transition: transform 0.6s , background-color 0.7s;
+    transition: transform 0.6s, background-color 0.7s;
 
 }
 
@@ -256,7 +265,7 @@ nav {
 /* ----------------------------My Work-------------------------  */
 
 .My-work-section {
-    height: 100vh;
+    height: 100%;
     width: 83vw;
     background-color: var(--bg-color);
     gap: 3em;
@@ -325,6 +334,7 @@ nav {
 
 .work-container {
     gap: 1.6em;
+    flex-wrap: wrap;
 }
 
 .My-work-section .btn {
